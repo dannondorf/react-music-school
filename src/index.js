@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import 'typeface-raleway';
+import 'typeface-open-sans';
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap-social/bootstrap-social.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

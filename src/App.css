@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  color: #023861;
+  background-color: #fff7ec;
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 16px; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h1, h2, h3, h4, h5 {
+    font-family: "Raleway", Sans-Serif;
+    color: #023861; }
+
+.navbar {
+  z-index: 100;
+  background-color: #023861be;
+  margin-bottom: -3.5rem;
+  color: #fff7ec;
   }
-}
+  .btn-sm, .modal-content {
+    border-radius: 0; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .btn-lg {
+    border-width: medium;
+    font-size: 1.1rem; }
 
-.App-link {
-  color: #61dafb;
-}
+  .carousel-caption {
+    top: 38%; }
+  
+  .carousel-caption h1 {
+    color: #fff7ec;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem; }
+  
+  .carousel-caption h3 {
+    color: #fff7ec;
+    text-shadow: .1rem .1rem .6rem black;
+    padding-bottom: 1.6rem; }
+    
+  .carouselBtn {
+    box-shadow: .1rem .1rem .5rem black;
+    border-radius: 0; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .site-footer {
+      padding-top: 2rem;
+      background-color: #023861;
+      color: #fff7ec; }
+      .site-footer h5 {
+        color: #c87700; }
+      .site-footer li, .site-footer a, .site-footer i {
+        color: #fff7ec; }
