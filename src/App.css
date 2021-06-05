@@ -10,10 +10,14 @@ body {
     color: #023861; }
 
 .navbar {
-  z-index: 100;
+  /* z-index: 100; */
   background-color: #023861be;
   margin-bottom: -3.5rem;
   color: #fff7ec;
+  }
+
+  .nav-link {
+    color: #fff7ec;
   }
   .btn-sm, .modal-content {
     border-radius: 0; }
@@ -41,11 +45,42 @@ body {
     box-shadow: .1rem .1rem .5rem black;
     border-radius: 0; }
 
-    .site-footer {
-      padding-top: 2rem;
-      background-color: #023861;
+  .formLabel{
+    color: #fff7ec;
+  }
+
+  #contactFormHeader {
+    color: #fff7ec;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+  }
+    
+  #contactForm {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 8rem; }
+
+  .jumbotron h1, .jumbotron h3 {
+    color: #fff7ec;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .2rem .2rem .4rem black;
+    padding-bottom: 1rem; }
+  
+  .jumbotron h4 {
+    color: #fff7ec;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .4rem black;
+    padding-bottom: 1rem; }
+
+  .site-footer {
+    padding-top: 2rem;
+    background-color: #023861;
+    color: #fff7ec; }
+    .site-footer h5 {
+      color: #c87700; }
+    .site-footer li, .site-footer a, .site-footer i {
       color: #fff7ec; }
-      .site-footer h5 {
-        color: #c87700; }
-      .site-footer li, .site-footer a, .site-footer i {
-        color: #fff7ec; }
+  

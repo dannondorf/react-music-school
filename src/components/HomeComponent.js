@@ -57,7 +57,7 @@ function ControlledCarousel() {
 
 function Home(props) {
     return(
-        <div>
+        <React.Fragment>
             <ControlledCarousel />
             <Row>
                 <Col>
@@ -76,7 +76,7 @@ function Home(props) {
             <AdvantageAccordion />
             <TestimonialSlider />
             
-        </div>    
+        </React.Fragment>    
     )
 }
 

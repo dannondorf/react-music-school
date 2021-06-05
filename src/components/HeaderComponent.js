@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
-
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
-// import  Navbar, Nav, Button, Carousel from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+
 
 function Header(props) {
     const [staffShow, setStaffShow] = useState(false);
@@ -13,14 +13,16 @@ function Header(props) {
    
     return( 
         <div>
-            <Navbar collapseOnSelect sticky="top" className="navbar" expand="md" variant="dark">
-                <Navbar.Brand href="#home">React Music Academy</Navbar.Brand>
+            <Navbar collapseOnSelect fixed="top" expand="md" variant="dark">
+                <Navbar.Brand>
+                    <NavLink className="nav-link" to="/home">React Music Academy</NavLink>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#lessons">Lessons</Nav.Link>
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
+                        <Nav.Link><NavLink className="nav-link" to="/lessons">Lessons</NavLink></Nav.Link>
+                        <Nav.Link><NavLink className="nav-link" to="/about">About</NavLink></Nav.Link>
+                        <Nav.Link><NavLink className="nav-link" to="/contact">Contact</NavLink></Nav.Link>
                     </Nav>
                     <Nav>
                         <Button className="btn-sm" variant="outline-light" onClick={() => setStaffShow(true)}>Staff Login</Button>{' '}
